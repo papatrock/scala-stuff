@@ -10,6 +10,17 @@ scalaVersion := "2.13.16"
 libraryDependencies += guice
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "7.0.2" % Test
 
+libraryDependencies ++= Seq(
+  guice,
+  "com.lihaoyi" %% "requests" % "0.8.0",
+  "com.lihaoyi" %% "ujson" % "3.3.0", // <-- Adicione ou garanta que esta linha exista
+  "org.jsoup" % "jsoup" % "1.17.2",
+  "org.scalatestplus.play" %% "scalatestplus-play" % "7.0.2" % Test
+)
+
+// Dependência apenas para testes
+libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "7.0.2" % Test
+
 sourcePositionMappers := Nil
 // Adds additional packages into Twirl
 //TwirlKeys.templateImports += "com.example.controllers._"

@@ -20,3 +20,5 @@ PUT /todo/done/:itemId      controllers.TodoListController.markAsDone(itemId: Lo
 DELETE      /todo/done      controllers.TodoListController.deleteAllDone
 
 POST        /todo       controllers.TodoListController.addNewItem
+
+GET         /quehoraseuvouembora    controllers.QueHorasEuVouEmbora.getHora
